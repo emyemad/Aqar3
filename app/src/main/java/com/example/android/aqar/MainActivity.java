@@ -10,13 +10,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    // fake comment!!
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buy = (Button)findViewById(R.id.buy);
+        Button buy = findViewById(R.id.buy);
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 // Inflate and set the layout for the dialog
                 // Pass null as the parent view because its going in the dialog layout
                 View view = getLayoutInflater().inflate(R.layout.dialogue_layout , null);
-                final EditText visanum = v.findViewById(R.id.visaNum);
-                final EditText visapassword = v.findViewById(R.id.visaPassword);
+                
 
 
                 builder.setView(view)
